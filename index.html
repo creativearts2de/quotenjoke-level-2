@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo.png">
+    <title>Real Quote</title>
+</head>
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="./styles/presets.css">
+<link rel="stylesheet" href="./styles/resets.css">
+<link rel="stylesheet" href="./styles/mediaq.css">
+
+<!-- javascript -->
+<script src="./js/firebase.js"></script>
+<script src="./js/main.js" defer></script>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="">
+            <p>Real<br>Quote</p>
+        </div>
+        <section>
+            <h1 class="">QUOTES AREA</h1>
+            <p>WE WILL PROMISE YOU SOMETHING TOMORROW BUT FOR TODAY WE HOPE YOU FIND THE QUOTES THAT CAN CERTISFY YOUR APPETITE. CHECK THESE OUT BRO / SIS</p>
+            
+        </section>
+        <article>
+            <div class="quote">
+                <div class="qt-body">
+                    <p>Friedrick Nietzsche</p>
+                    <p>Whoever fights Monsters should see to it that in the process he does not become a monster. And if you gaze long enough into an abyss, the abyss will gaze back into you.</p>
+                </div>
+                <div class="links">
+                    <span>Share</span>
+                    <span class="btn-rounded">Like</span>
+                    <span>Comment</span>
+                </div>
+                <div class="nnb">
+                    <div class="prev btn-rounded"></div>
+                    <div class="next btn-rounded"></div>
+                </div>
+            </div>
+        </article>
+    </header>
+
+    <div class="buttons column container">
+        <div class="button">
+            <button class="btn">More Quotes</button>
+        </div>
+        <div class="button">
+            <button class="btn btn1">Contact Developer</button>
+        </div>
+        <div class="button">
+            <button class="btn btn2">About Us</button>
+        </div>
+    </div>
+
+    <section class="container bg-white hmls">
+        <p>We have Original and other types of Quotes. If you are confident enough to post quotes by you or your friend never quoted anywhere, proceed bellow.</p>
+        <section>
+            <div class="buttons">
+                <button class="btn">Personal Quote</button>
+                <button class="btn">Existent Quote</button>
+            </div>
+            <div class="bordered">
+                <p>
+                    Quote that has not been made anywhere but rather personal and you feel the need to share it with the world
+                </p>
+            </div>
+        </section>
+
+        <form action="" class="bg-light-primary">
+            <div class="form-element">
+                <input type="text" name="author" id="author" placeholder="Quote Author">
+            </div>
+            <div class="form-element">
+                <p>Allow User Rating</p>
+                <input type="radio" name="allowrating" id="allow">
+                <label for="allow">Yes</label>
+                <input type="radio" name="allowrating" id="notallow">
+                <label for="notallow">No</label>
+            </div>
+            <div class="form-element">
+                <textarea name="body" id="quotebody" placeholder="Enter Quote Text" rows="4"></textarea>
+            </div>
+
+            <button class="btn btn3 btn-mbl" type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <footer class="container bg-black">
+        <div class="socials">
+            <p class="social">faceBook</p>
+            <p class="social">X (Twitter)</p>
+            <p class="social">gitHub</p>
+            <p class="social">Instagram</p>
+        </div>
+        <p>
+            Developed with 💕💕 By Masalex8
+        </p>
+        <p class="copyright">
+            Copyright legitAB media 2024, All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
