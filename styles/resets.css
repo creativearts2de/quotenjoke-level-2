@@ -1,3 +1,45 @@
+/* font imports */
+@font-face {
+    font-family: Hp;
+    src: url(./../assets/fonts/hp.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/assets/fonts/quicksand.ttf);
+}
+
+:root{
+    /* variables */
+        
+        /* colors */
+        --accent-color: #1C986A;
+        --primary-color: #3826B2;
+        --gray: #B7B7B7;
+        --black: #030323;
+        --white: #FBFBFF;
+        --light-primary-color: #D3CCFF;
+    
+        /* font sizes */
+        --xlfont: 42px;
+        --lfont: 32px;
+        --mdfont: 26px;
+        --smfont: 14px;
+        --desktopsfont: 18px;
+        --mobilesfont: 16px;
+    
+        /* font combinations */
+        --mbl-p: var(--mobilesfont)/1.6 Hp, sans-serif;
+        --dsktp-p: var(--desktopsfont)/1.6 Hp, sans-serif;
+    }
+
+*{
+    font-family: Hp;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 body{
     margin: 0; padding: 0;
     overflow-x: hidden;
@@ -5,7 +47,7 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: Quicksand, sans-serif;
-    line-height: .4;
+    line-height: 1.4;
 }
 
 h1{
@@ -20,3 +62,21 @@ img{
     margin: 0; padding: 0;
     max-width: 100%; max-height: 100%;
 }
+s
+/* ======= SINGLE EFFECTS========== */
+
+.btn-rounded{border-radius: 60px !important;}
+.btn-mbl{padding: .4rem 2rem;}
+
+/* backgrounds */
+.bg-white{background: var(--white);}
+.bg-black{background: var(--black);}
+.bg-light-primary{background: var(--light-primary-color);}
+.bg-primary{background: var(--primary-color);}
+.bg-accent{background: var(--accent-color);}
+.bg-gray{background: var(--gray);}
+
+.container{padding: 2rem .8rem 4rem;}
+.no-underline{text-decoration: none;}
+
+

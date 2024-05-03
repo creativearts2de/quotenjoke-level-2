@@ -1,48 +1,3 @@
-/* font imports */
-@font-face {
-    font-family: Hp;
-    src: url(./../assets/fonts/hp.ttf);
-}
-
-@font-face {
-    font-family: Quicksand;
-    src: url(/assets/fonts/quicksand.ttf);
-}
-
-
-:root{
-/* variables */
-    
-    /* colors */
-    --accent-color: #1C986A;
-    --primary-color: #3826B2;
-    --gray: #B7B7B7;
-    --black: #030323;
-    --white: #FBFBFF;
-    --light-primary-color: #D3CCFF;
-
-    /* font sizes */
-    --xlfont: 42px;
-    --lfont: 32px;
-    --mdfont: 26px;
-    --smfont: 14px;
-    --desktopsfont: 18px;
-    --mobilesfont: 16px;
-
-    /* font combinations */
-    --mbl-p: var(--mobilesfont)/1.6 Hp, sans-serif;
-    --dsktp-p: var(--desktopsfont)/1.6 Hp, sans-serif;
-}
-
-/* single effects */
-.btn-rounded{
-    border-radius: 60px !important;
-}
-
-.btn-mbl{
-    padding: .4rem 2rem;
-}
-
 /* buttons */
 .btn{
     padding: .4rem .8rem;
@@ -81,91 +36,49 @@
 }
 
 
-/* backgrounds */
-.bg-white{
-    background: var(--white);
-}
-.bg-black{
-    background: var(--black);
-}
-.bg-light-primary{
-    background: var(--light-primary-color);
-}
-.bg-primary{
-    background: var(--primary-color);
-}
-.bg-accent{
-    background: var(--accent-color);
-}
-.bg-gray{
-    background: var(--gray);
-}
-
-
 /* blocks */
-.quote{
-    background-color: var(--white);
-    padding: 40px 60px 20px;
-    border-left: solid 4px var(--light-primary-color);
-    margin: 4rem;
-  }
+    .quote{
+        background-color: var(--white);
+        padding: 40px 60px 20px;
+        border-left: solid 4px var(--light-primary-color);
+        margin: 4rem;
+        }
 
-  .quote .qt-body p:first-of-type:after{
-    content: '';
-    display: block;
-    height: 1px; width: 24%;
-    background-color: var(--primary-color);
-    /* border-bottom: 2px solid var(--gray); */
-  }
+            .quote .qt-body p:first-of-type:after{
+                content: '';
+                display: block;
+                height: 1px; width: 24%;
+                background-color: var(--primary-color);
+                /* border-bottom: 2px solid var(--gray); */
+            }
 
-  .quote span{
-    font-family: Quicksand; color: var(--primary-color);
-    font-size: var(--smfont);
-    display: inline-block;
-    padding-bottom: .4rem;
-  }
+            .quote span{
+                font-family: Quicksand; color: var(--primary-color);
+                font-size: var(--smfont);
+                display: inline-block;
+                padding-bottom: .4rem;
+            }
 
-  .quote span:nth-of-type(2){
-    color: var(--black);
-    display: inline-block; padding: .2rem .8rem; margin: 0 .2rem;
-    background-color: var(--light-primary-color);
-}
+            .quote span:nth-of-type(2){
+                color: var(--black);
+                display: inline-block; padding: .2rem .8rem; margin: 0 .2rem;
+                background-color: var(--light-primary-color);
+            }
 
-  .quote .nnb{
-    height: 2.5rem;
-    width: 20%;
-
-    display: flex; justify-content: space-between;
-    align-items: center;
-    padding: 0 .2rem;
-    }
-    .quote .nnb div{
-        height: 2.4rem; width: 2.4rem;
-        background-color: var(--black);
-        position: relative;
-        font-size: var(--mdfont);
-
-    }
-    .quote .nnb div::after{
-        color: var(--white);
-        position: absolute;
-        right: 0; 
-        bottom: 2px;
-        
-    }
-    .quote .nnb .next{background-color: var(--accent-color);}
-    .quote .nnb .next::after{
-        content: '▶';
-        transform: translatex(-25%);
-    }
-    .quote .nnb .prev::after{
-        content: '◀';
-        transform: translatex(-55%);
+    /* a single quote */
+    .quotes{
+        display: flex; justify-content: center;
+        gap: .4rem; flex-wrap: wrap;
     }
 
-.container{
-    padding: 2rem .8rem 4rem;
-}
+        .aquote{
+            min-width: 300px;
+            background: var(--light-primary-color);
+            padding: 1rem;
+            border-radius: .4rem;
+        }
+
+
 
 .bordered{
     padding: .2rem .8rem; margin: 1rem 0;
@@ -212,3 +125,21 @@ input[type=text], textarea{
     display: block;
     min-width: 40%;
  }
+
+ .flex{
+    display: flex;
+    align-items: center;
+ }
+
+ .flex-col{
+    display: flex; flex-direction: column;
+ }
+
+.gap-1{gap: 1rem;}
+.gap-2{gap: 2rem;}
+.gap-3{gap: 3rem;}
+.gap-p5{gap: .5rem;}
+
+
+
+

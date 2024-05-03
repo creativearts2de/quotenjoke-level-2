@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/logo.png">
+    <link rel="icon" href="/assets/images/logo.png">
     <title>Real Quote</title>
 </head>
 
 <!-- stylesheets -->
-<link rel="stylesheet" href="./styles/presets.css">
-<link rel="stylesheet" href="./styles/resets.css">
-<link rel="stylesheet" href="./styles/mediaq.css">
+<link rel="stylesheet" href="/styles/resets.css">
+<link rel="stylesheet" href="/styles/presets.css">
+<link rel="stylesheet" href="/styles/mediaq.css">
+<link rel="stylesheet" href="/styles/main.css">
 
 <!-- javascript -->
-<script src="./js/firebase.js"></script>
-<script src="./js/main.js" defer></script>
+<script src="/js/functions.js"></script>
+<script src="/js/firebase.js" type="module"></script>
+<script src="/js/main.js" defer></script>
 
 <body>
     <header class="container">
         <div class="logo">
-            <img src="./assets/images/logo.png" alt="">
+            <img src="/assets/images/logo.png" alt="">
             <p>Real<br>Quote</p>
         </div>
         <section>
@@ -27,7 +29,7 @@
             <p>WE WILL PROMISE YOU SOMETHING TOMORROW BUT FOR TODAY WE HOPE YOU FIND THE QUOTES THAT CAN CERTISFY YOUR APPETITE. CHECK THESE OUT BRO / SIS</p>
             
         </section>
-        <article>
+        <article id="main-quote-area-home">
             <div class="quote">
                 <div class="qt-body">
                     <p>Friedrick Nietzsche</p>
@@ -39,8 +41,8 @@
                     <span>Comment</span>
                 </div>
                 <div class="nnb">
-                    <div class="prev btn-rounded"></div>
-                    <div class="next btn-rounded"></div>
+                    <div class="prev">◀</div>
+                    <div class="next">▶</div>
                 </div>
             </div>
         </article>
@@ -48,13 +50,19 @@
 
     <div class="buttons column container">
         <div class="button">
-            <button class="btn">More Quotes</button>
+            <a href="./pages/quotes.html" class="btn no-underline">
+                More Quotes
+            </a>
         </div>
         <div class="button">
-            <button class="btn btn1">Contact Developer</button>
+            <a href="" class="btn btn1 no-underline">
+                Contact Developer
+            </a>
         </div>
         <div class="button">
-            <button class="btn btn2">About Us</button>
+            <a href="./pages/about.html" class="btn btn2 no-underline">
+                About Us
+            </a>
         </div>
     </div>
 
@@ -71,10 +79,14 @@
                 </p>
             </div>
         </section>
-
         <form action="" class="bg-light-primary">
             <div class="form-element">
-                <input type="text" name="author" id="author" placeholder="Quote Author">
+                <input autofocus type="text" name="author" id="author" placeholder="Quote Author" list="authornames">
+                <datalist id="authornames">
+                    <option value="Masumba Alex">
+                    <option value="Phyllis Diller">
+                    <option value="Graham Norton">
+                </datalist>
             </div>
             <div class="form-element">
                 <p>Allow User Rating</p>
