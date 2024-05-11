@@ -1,12 +1,13 @@
 const mainQuoteHome = document.getElementById('#main-quote-area-home')
 const theQuoteBody = document.querySelector('#main-quote-area-home .qt-body')
+const submitQt = document.getElementById('submit-quote')
 
 // the next and before buttons
 const nxtBtn = document.querySelector('.nnb .next')
 const prevBtn = document.querySelector('.nnb .prev')
 
 const quoteCount = quotes.length
-let displayStat = -1
+let displayStat = 0
 let displayed = []
 for (let i=0; i<quotes.length; i++){
     randValue(quotes.length, displayed)
@@ -37,5 +38,21 @@ prevBtn.addEventListener('click', () =>{
     theQuoteBody.innerHTML = quoteBody(quotes[displayed[displayStat]])
 })
 
+submitQt.addEventListener('submit', e =>{
+ e.preventDefault()
 
+ let theSubmit = {}
+
+ const author1 = submitQt.author.value
+ const quote1 = submitQt.body.value
+ const category = submitQt.category.value
+ const rating = submitQt.allowrating.value == 'allow' ? true : false
+
+ theSubmit.author = author1
+ theSubmit.quoteBody = quote1
+ theSubmit.ratingsAllowed = rating
+ theSubmit.category = category
+
+ console.log(theSubmit)
+})
 

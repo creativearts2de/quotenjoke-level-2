@@ -5,14 +5,9 @@ const quotes = [
     //     category: '',
     //     quoteID: ''
     // },
+
     {
-        author: 'To BEkNOWN',
-        quoteBody: 'I saw a study that said that speaking infront of a crowd is considered the number one fear for the average person. Number two was death. This means that the average person, if you have to be at funeral, you would rather be in the casket than doing the Eulogy',
-        category: 'Fun',
-        quoteID: '20240420022'
-    },
-    {
-        author: 'To BEkNOWN',
+        author: 'Name "Undefined"',
         quoteBody: 'I saw a study that said that speaking infront of a crowd is considered the number one fear for the average person. Number two was death. This means that the average person, if you have to be at funeral, you would rather be in the casket than doing the Eulogy',
         category: 'Fun',
         quoteID: '20240420022'
@@ -60,8 +55,8 @@ const quotes = [
         quoteID: '20240420016'
     },
     {
-        author: 'Everybody knows how to raise kids except those who have them.',
-        quoteBody: 'P.J. O\'Rourke',
+        quoteBody: 'Everybody knows how to raise kids except those who have them.',
+        author: 'P.J. O\'Rourke',
         category: 'Fun',
         quoteID: '20240420015'
     },

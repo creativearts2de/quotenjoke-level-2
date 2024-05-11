@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/images/logo.png">
     <title>Real Quote</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/styles/resets.css">
+    <link rel="stylesheet" href="/styles/presets.css">
+    <link rel="stylesheet" href="/styles/mediaq.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    
+    <!-- javascript -->
+    <script src="/js/functions.js"></script>
+    <script src="/js/firebase.js" type="module"></script>
+    <script src="/js/main.js" defer></script>
 </head>
-
-<!-- stylesheets -->
-<link rel="stylesheet" href="/styles/resets.css">
-<link rel="stylesheet" href="/styles/presets.css">
-<link rel="stylesheet" href="/styles/mediaq.css">
-<link rel="stylesheet" href="/styles/main.css">
-
-<!-- javascript -->
-<script src="/js/functions.js"></script>
-<script src="/js/firebase.js" type="module"></script>
-<script src="/js/main.js" defer></script>
 
 <body>
     <header class="container">
@@ -79,7 +79,7 @@
                 </p>
             </div>
         </section>
-        <form action="" class="bg-light-primary">
+        <form action="" class="bg-light-primary" id="submit-quote">
             <div class="form-element">
                 <input autofocus type="text" name="author" id="author" placeholder="Quote Author" list="authornames">
                 <datalist id="authornames">
@@ -90,10 +90,21 @@
             </div>
             <div class="form-element">
                 <p>Allow User Rating</p>
-                <input type="radio" name="allowrating" id="allow">
+                <input type="radio" name="allowrating" id="allow" value="allow">
                 <label for="allow">Yes</label>
-                <input type="radio" name="allowrating" id="notallow">
+                <input type="radio" value="notallow" name="allowrating" id="notallow">
                 <label for="notallow">No</label>
+            </div>
+            <div class="form-element flex gap-p5">
+                <select name="category">
+                    <option value="choose one" disabled>Please choose</option>
+                    <option value="Fun">Fun</option>
+                    <option value="Life">Life</option>
+                </select>
+                <select name="types">
+                    <option value="personal">Personal</option>
+                    <option value="existent">Existent</option>
+                </select>
             </div>
             <div class="form-element">
                 <textarea name="body" id="quotebody" placeholder="Enter Quote Text" rows="4"></textarea>
